@@ -1,0 +1,43 @@
+#email{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#password{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#firstname{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#surname{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#avatarimage{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#phone{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#button{
+    width: 20%;
+    margin: 0 auto;
+    background-color: #90a4ae;
+}
+
+body{
+    background-color: #cfd8dc;
+}
+
+h3{
+    text-align: center;
+}

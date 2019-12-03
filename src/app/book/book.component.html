@@ -1,0 +1,60 @@
+<body>
+    <br><br>
+    <h3>See all books</h3>
+      <div id = button>
+        <button class="btn btn-outline-dark btn-block" (click)="getBooks()">See all books</button>
+      </div>
+      <br>
+      <div class="row">
+        <div *ngFor="let book of books; index as i">
+          <div id= card class="card">
+            <div class="card-body">
+              {{i + 1}}.
+              <p class="text-center">Title: {{Book.title}}</p>
+              <p class="text-center">ISBN: {{Book.ISBN}}</p>
+              <p class="text-center">Description: {{Book.description}}</p>
+              <p class="text-center">Author: {{Book.author}}</p>
+              <p class="text-center">Publish date: {{Book.publishDate}}</p>
+              <p class="text-center">Price: {{Book.price}}</p>
+              <p class="text-center">Publisher: {{Book.publisher}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br><br><br>
+    <h3>Find a book</h3>
+    <form #getbook="ngForm">
+      <div id = book>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input id="book" type="text" class="form-control" name="book" placeholder="Book" ngModel required class="formulario">
+        </div>
+      </div>
+      <br>
+      <div id = button>
+        <button class="btn btn-outline-dark btn-block" type="button" (click)="Find(formulario.form)" >Find a book</button>
+      </div>
+    </form>
+    <div *ngIf = "book1">
+      <div class="row">
+        <div *ngFor = "let book of book1; index as i">
+          <br>
+          <div id= card class="card">
+            <div class="card-body">
+              <p class="text-center">Title: {{Book.title}}</p>
+              <p class="text-center">ISBN: {{Book.ISBN}}</p>
+              <p class="text-center">Description: {{Book.description}}</p>
+              <p class="text-center">Author: {{Book.author}}</p>
+              <p class="text-center">Publish date: {{Book.publishDate}}</p>
+              <p class="text-center">Price: {{Book.price}}</p>
+              <p class="text-center">Publisher: {{Book.publisher}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div id= bottom>
+      <br><br><br><br><br><br><br><br>
+    </div>
+  </body>

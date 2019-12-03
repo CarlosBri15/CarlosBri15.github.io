@@ -1,0 +1,28 @@
+<body>
+  <br><br><br>
+  <h3>Log In</h3>
+  <br>
+  <form #formulario="ngForm" (ngSubmit)="LogIn(formulario.form)">
+    <div id = email>  
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email" ngModel required>
+      </div>
+    </div>
+    <br>
+    <div id = password>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password" ngModel required>
+      </div>
+    </div>
+    <br> <br>
+    <div id = button>
+      <button class="btn btn-outline-dark btn-block" type="submit">Log In</button>
+    </div>
+  </form>
+  <br><br><br><br><br>
+  <div id= bottom>
+    <br><br><br><br><br><br><br><br>
+  </div>
+</body>

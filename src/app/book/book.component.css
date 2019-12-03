@@ -1,0 +1,32 @@
+#books{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#book{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#bottom{
+    background-color: #bcaaa4;
+}
+
+#button{
+    width: 20%;
+    margin: 0 auto;
+    background-color: #90a4ae;
+}
+
+#card{
+    width: 50%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #cfd8dc;
+}
+
+h3{
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+<body>
+    <br><br><br>
+    <h3>Register</h3>
+    <br>
+    <form #formulario="ngForm" (ngSubmit)="Register(formulario.form)">
+      <div id = email>  
+        <div class="input-group">
+          <input id="email" type="text" class="form-control" name="email" placeholder="Email" ngModel required>
+        </div>
+      </div>
+      <br>
+      <div id = password>
+        <div class="input-group">
+          <input id="password" type="password" class="form-control" name="password" placeholder="Password" ngModel required>
+        </div>
+      </div>
+      <br>
+      <div id = firstname>  
+          <div class="input-group">
+            <input id="firstname" type="text" class="form-control" name="firstname" placeholder="First Name" ngModel required>
+          </div>
+        </div>
+        <br>
+      <div id = password>
+        <div class="input-group">
+          <input id="surname" type="text" class="form-control" name="surname" placeholder="Surname" ngModel required>
+        </div>
+      </div>
+      <br>
+      <div id = avatarimage>  
+          <div class="input-group">
+            <input id="avatarimage" type="text" class="form-control" name="avatarimagev" placeholder="Avatar Image" ngModel required>
+          </div>
+        </div>
+        <br>
+      <div id = phone>
+        <div class="input-group">
+          <input id="phone" type="number" class="form-control" name="phone" placeholder="Phone" ngModel required>
+        </div>
+      </div>
+        
+      <br> <br>
+      <div id = button>
+        <button class="btn btn-outline-dark btn-block" type="submit">Register</button>
+      </div>
+    </form>
+    <br><br><br><br><br>
+  </body>
