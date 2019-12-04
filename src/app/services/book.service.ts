@@ -13,30 +13,30 @@ export class BookService {
   }
 
   getBookByTitle(data){
-    return this.http.get('http://localhost:3000/book/title', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByISBN(data){
-    return this.http.get('http://localhost:3000/book/ISBN', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByDescription(data){
-    return this.http.get('http://localhost:3000/book/description', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByAuthor(data){
-    return this.http.get('http://localhost:3000/book/author', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByPublishDate(data){
-    return this.http.get('http://localhost:3000/book/publishDate', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByPrice(data){
-    return this.http.get('http://localhost:3000/book/price', data);
+    return this.http.get(`http://localhost:3000/book/${data}`);
   }
 
   getBookByPublisher(data){
-    return this.http.get('http://localhost:3000/book/publisher', data);
+    return this.http.get(`http://localhost:3000/book/publisher${data}`);
   }
 }

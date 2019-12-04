@@ -10,7 +10,7 @@ function getBook(req, res) {
 }
 
 function getBookByTitle(req, res) {
-  const { title } = req.body;
+  const { title } = req.params.title;
 
   Book.findOne({ title }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -20,7 +20,7 @@ function getBookByTitle(req, res) {
 }
 
 function getBookByISBN(req, res) {
-  const { ISBN } = req.body;
+  const { ISBN } = req.params.ISBN;
 
   Book.findOne({ ISBN }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -30,7 +30,7 @@ function getBookByISBN(req, res) {
 }
 
 function getBookByDescription(req, res) {
-  const { description } = req.body;
+  const { description } = req.params.description;
 
   Book.find({ description }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -40,7 +40,7 @@ function getBookByDescription(req, res) {
 }
 
 function getBookByAuthor(req, res) {
-  const { author } = req.body;
+  const { author } = req.params.author;
 
   Book.find({ author }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -50,7 +50,7 @@ function getBookByAuthor(req, res) {
 }
 
 function getBookByPublishDate(req, res) {
-  const { publishDate } = req.body;
+  const { publishDate } = req.params.publishDate;
 
   Book.find({ publishDate }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -60,7 +60,7 @@ function getBookByPublishDate(req, res) {
 }
 
 function getBookByPrice(req, res) {
-  const { price } = req.body;
+  const { price } = req.params.price;
 
   Book.find({ price }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });
@@ -70,7 +70,7 @@ function getBookByPrice(req, res) {
 }
 
 function getBookByPublisher(req, res) {
-  const { publisher } = req.body;
+  const { publisher } = req.params.publisher;
 
   Book.find({ publisher }, (error, book) => {
     if (!book) return res.status(404).send({ message: 'Book not found' });

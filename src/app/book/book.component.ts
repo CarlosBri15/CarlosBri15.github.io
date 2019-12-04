@@ -28,8 +28,8 @@ export class BookComponent implements OnInit {
     })
   }
 
-  /*getBookByTitle(data){
-    this.bookService.getBookByTitle(data.value).subscribe((response: Book) => {
+  getBookByTitle(data){
+    this.bookService.getBookByTitle(data.value.title).subscribe((response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -39,7 +39,7 @@ export class BookComponent implements OnInit {
   }
 
   getBookByISBN(data){
-    this.bookService.getBookByISBN(data.value).subscribe((response: Book) => {
+    this.bookService.getBookByISBN(data.value.ISBN).subscribe((response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -49,7 +49,7 @@ export class BookComponent implements OnInit {
   }
 
   getBookByDescription(data){
-    this.bookService.getBookByDescription(data.value).subscribe( (response: Book) => {
+    this.bookService.getBookByDescription(data.value.description).subscribe( (response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -59,7 +59,7 @@ export class BookComponent implements OnInit {
   }
 
   getBookByAuthor(data){
-    this.bookService.getBookByAuthor(data.value).subscribe( (response: Book) => {
+    this.bookService.getBookByAuthor(data.value.author).subscribe( (response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -69,7 +69,7 @@ export class BookComponent implements OnInit {
   }
 
   getBookByPublishDate(data){
-    this.bookService.getBookByPublishDate(data.value).subscribe( (response: Book) => {
+    this.bookService.getBookByPublishDate(data.value.publishDate).subscribe( (response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -79,7 +79,7 @@ export class BookComponent implements OnInit {
   }
 
   getBookByPrice(data){
-    this.bookService.getBookByPrice(data.value).subscribe( (response: Book) => {
+    this.bookService.getBookByPrice(data.value.price).subscribe( (response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
@@ -89,12 +89,12 @@ export class BookComponent implements OnInit {
   }
 
   getBookByPublisher(data){
-    this.bookService.getBookByPublisher(data.value).subscribe( (response: Book) => {
+    this.bookService.getBookByPublisher(data.value.publisher).subscribe( (response: Book) => {
       this.book = response;
       console.log(response);
     }, (err) => {
       alert('Book not found');
       console.log(err);
     });
-  }*/
+  }
 }
