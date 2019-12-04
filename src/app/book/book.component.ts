@@ -28,7 +28,7 @@ export class BookComponent implements OnInit {
     })
   }
 
-  getBookByTitle(data){
+  /*getBookByTitle(data){
     this.bookService.getBookByTitle(data.value).subscribe((response: Book) => {
       this.book = response;
       console.log(response);
@@ -96,5 +96,5 @@ export class BookComponent implements OnInit {
       alert('Book not found');
       console.log(err);
     });
-  }
+  }*/
 }
